@@ -1,6 +1,6 @@
 #! utf-8
 
-def df(f, x: float, h: float=1e-10):
+def df_num(f, x: float, h: float=1e-10):
     """Retorna a derivada numérica de  f  no ponto  x, com aproximação de  h.
     
     Parameters
