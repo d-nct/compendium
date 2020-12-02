@@ -1,13 +1,8 @@
-def mod(path):
-    from os import listdir
-    
-    l = listdir(path)
-    
-    var = []
-    for x in l:
-        if not '.' in x: # Apenas pastas
-            var.append(x)
+#! utf-8
 
-__all__ = mod('/home/danieln/python/compendium')
+from os import listdir
 
-def pol5(x): return x**5 - x - 1
+__all__ = []
+for x in listdir('/home/danieln/python/compendium'):
+    if '.py' in x and '__main__.py' != x: # Apenas pastas
+        __all__.append(x)
